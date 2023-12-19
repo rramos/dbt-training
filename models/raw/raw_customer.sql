@@ -5,4 +5,7 @@
 }}
 
 select * 
-FROM emerald-trilogy-408514.globalmart.customers
+FROM 
+{{ source('bigquery', 'customers') }}
+
+-- emerald-trilogy-408514.globalmart.customers

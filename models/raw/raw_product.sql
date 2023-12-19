@@ -6,4 +6,5 @@
 
 select * 
 FROM
-emerald-trilogy-408514.globalmart.products
+{{ source('bigquery', 'products') }}
+-- emerald-trilogy-408514.globalmart.products
