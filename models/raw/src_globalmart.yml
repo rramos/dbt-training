@@ -9,13 +9,16 @@ sources:
       - name: orders
       - name: product
   - name: bigquery
+    description: A clone of the globalmart Database
     project: emerald-trilogy-408514
     dataset: globalmart
     tables:
       - name: customers
       - name: orders
+        description: raw orders table
         columns:
           - name: orderid
+            description: primary key for orders
             tests:
               - unique
               - not_null
